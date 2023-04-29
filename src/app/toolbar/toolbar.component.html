@@ -1,0 +1,12 @@
+<div class="toolbar">
+    <div class="toolbar__container">
+      <div class="toolbar__logo-container">
+        <div class="toolbar__logo">{{logoName}}</div>
+        <div class="toolbar__subheader">{{subheaderName}}</div>
+      </div>
+      <div class="toolbar__spacer"></div>
+      <nav class="toolbar__nav">
+        <a *ngFor="let item of navItems" href="{{item.url}}" class="toolbar__nav-item">{{item.label}}</a>
+      </nav>
+    </div>
+  </div>
