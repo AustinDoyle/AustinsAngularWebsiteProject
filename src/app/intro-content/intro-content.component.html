@@ -1,7 +1,9 @@
 <div class="intro">
   <div class="intro__container">
-    <div class="welcome">Welcome</div>
-    <div class="welcome-intro">I believe that a strong Developer should be proficient in web
+    <div class="welcome" [@letterAnimation]>
+      <span class="letter" *ngFor="let letter of 'Welcome'.split('')">{{ letter }}</span>
+    </div>
+    <div class="welcome-intro" [@slideUp]>I believe that a strong Developer should be proficient in web
       development languages and technologies, have a good understanding of software testing principles and
       methodologies, and be capable of writing clean and maintainable code. </div>
   </div>
