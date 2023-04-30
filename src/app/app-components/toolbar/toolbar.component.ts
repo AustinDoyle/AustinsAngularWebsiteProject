@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { fadeInLefToRight, slideUp } from '../animations/fade-in.animation';
+import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
 
 @Component({
   selector: 'app-toolbar',

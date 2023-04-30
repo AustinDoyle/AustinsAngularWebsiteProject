@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { letterAnimation } from '../animations/letter-by-letter.animation';
-import { fadeInLefToRight, slideUp } from '../animations/fade-in.animation';
+import { letterAnimation } from '../../animations/letter-by-letter.animation';
+import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
 
 @Component({
   selector: 'app-intro-content',
