@@ -3,27 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { IntroContentComponent } from './intro-content/intro-content.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { FooterComponent } from './footer/footer.component';
-import { TwoColumnImageTextComponent } from './two-column-image-text/two-column-image-text.component';
+import { FooterComponent } from './app-components/footer/footer.component';
+import { TwoColumnImageTextComponent } from './app-components/two-column-image-text/two-column-image-text.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselComponent } from './app-components/carousel/carousel.component';
+import { IntroContentComponent } from './app-components/intro-content/intro-content.component';
+import { ToolbarComponent } from './app-components/toolbar/toolbar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent,
     ToolbarComponent,
     IntroContentComponent,
     CarouselComponent,
     FooterComponent,
-    TwoColumnImageTextComponent
+    TwoColumnImageTextComponent,
+    HomeComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule
