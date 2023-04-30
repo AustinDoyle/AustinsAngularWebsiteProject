@@ -1,24 +1,23 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { IntroContentComponent } from './intro-content/intro-content.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { FooterComponent } from './footer/footer.component';
+import { IntroContentComponent } from './app-components/intro-content/intro-content.component';
+import { ToolbarComponent } from './app-components/toolbar/toolbar.component';
+import { CarouselComponent } from './app-components/carousel/carousel.component';
+import { FooterComponent } from './app-components/footer/footer.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        ServerComponent,
-        ServersComponent,
         ToolbarComponent,
         IntroContentComponent,
         CarouselComponent,
-        FooterComponent
+        FooterComponent,
       ],
+      imports: [RouterTestingModule],
+      // ADD ROUTER TESTING MODULE
     }).compileComponents();
   });
 
@@ -28,16 +27,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  // xit(`should have as title 'app'`, () => {
+  // it(`should have as title 'app'`, () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   const app = fixture.componentInstance;
-  //   expect(app.title).toEqual('my app');
+  //   expect(app.title).toEqual('Austin Doyle');
   // });
 
   xit('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain(
+      'app app is running!'
+    );
   });
 });
