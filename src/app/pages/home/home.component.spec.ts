@@ -14,10 +14,16 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomeComponent, ToolbarComponent, IntroContentComponent, TwoColumnImageTextComponent, CarouselComponent, FooterComponent],
-      imports: [BrowserAnimationsModule]
-    })
-      .compileComponents();
+      declarations: [
+        HomeComponent,
+        ToolbarComponent,
+        IntroContentComponent,
+        TwoColumnImageTextComponent,
+        CarouselComponent,
+        FooterComponent,
+      ],
+      imports: [BrowserAnimationsModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;

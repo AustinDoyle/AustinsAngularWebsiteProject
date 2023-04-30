@@ -10,9 +10,8 @@ describe('ToolbarComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ToolbarComponent],
-      imports: [BrowserAnimationsModule]
-    })
-      .compileComponents();
+      imports: [BrowserAnimationsModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ToolbarComponent);
     component = fixture.componentInstance;
@@ -24,27 +23,32 @@ describe('ToolbarComponent', () => {
   });
 
   it('should have toolbar logo containing Austin Doyle', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('.toolbar__logo');
+    const element =
+      fixture.debugElement.nativeElement.querySelector('.toolbar__logo');
     expect(element.innerHTML).toBe(component['logoName']);
-  })
+  });
 
   it('should have the correct subheader', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('.toolbar__subheader');
+    const element = fixture.debugElement.nativeElement.querySelector(
+      '.toolbar__subheader'
+    );
     expect(element.innerHTML).toBe(component['subheaderName']);
   });
 
   it('should have the correct headers for links', () => {
-    const elements = fixture.debugElement.nativeElement.querySelectorAll('.toolbar__nav a');
+    const elements =
+      fixture.debugElement.nativeElement.querySelectorAll('.toolbar__nav a');
     elements.forEach((element, index) => {
-      expect(element.innerHTML).toBe(component.navItems[index].label)
+      expect(element.innerHTML).toBe(component.navItems[index].label);
     });
   });
 
   it('should have the correct links', () => {
-    const elements = fixture.debugElement.nativeElement.querySelectorAll('.toolbar__nav a');
+    const elements =
+      fixture.debugElement.nativeElement.querySelectorAll('.toolbar__nav a');
     elements.forEach((element, index) => {
       let elementRef = element.getAttribute('href');
-      expect(elementRef).toBe(component.navItems[index].url)
+      expect(elementRef).toBe(component.navItems[index].url);
     });
   });
 });

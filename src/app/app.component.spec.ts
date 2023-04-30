@@ -14,11 +14,9 @@ describe('AppComponent', () => {
         ToolbarComponent,
         IntroContentComponent,
         CarouselComponent,
-        FooterComponent
+        FooterComponent,
       ],
-      imports: [
-        RouterTestingModule
-      ]
+      imports: [RouterTestingModule],
       // ADD ROUTER TESTING MODULE
     }).compileComponents();
   });
@@ -39,6 +37,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain(
+      'app app is running!'
+    );
   });
 });

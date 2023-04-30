@@ -5,7 +5,7 @@ import { takeUntil } from 'rxjs/operators';
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit, OnDestroy {
   @Input() images: string[] = [];
@@ -23,13 +23,15 @@ export class CarouselComponent implements OnInit, OnDestroy {
     timer(0, this.interval)
       .pipe(takeUntil(this.destroyed$))
       .subscribe(() => {
-        this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+        this.currentImageIndex =
+          (this.currentImageIndex + 1) % this.images.length;
       });
   }
 
   prevImage(): void {
     this.stopTransition();
-    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+    this.currentImageIndex =
+      (this.currentImageIndex - 1 + this.images.length) % this.images.length;
     this.restartTransition();
   }
 

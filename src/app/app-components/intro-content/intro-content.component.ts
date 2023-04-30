@@ -6,9 +6,6 @@ import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
   selector: 'app-intro-content',
   templateUrl: './intro-content.component.html',
   styleUrls: ['./intro-content.component.css'],
-  animations: [letterAnimation, fadeInLefToRight, slideUp]
+  animations: [letterAnimation, fadeInLefToRight, slideUp],
 })
-
-export class IntroContentComponent {
-
-}
+export class IntroContentComponent {}

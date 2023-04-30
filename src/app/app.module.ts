@@ -20,15 +20,15 @@ import { AppRoutingModule } from './app-routing.module';
     CarouselComponent,
     FooterComponent,
     TwoColumnImageTextComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

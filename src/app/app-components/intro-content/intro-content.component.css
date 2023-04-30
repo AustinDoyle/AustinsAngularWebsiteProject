@@ -1,41 +1,41 @@
 .intro {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 100px;
-    background-color: #58a4b0;
-    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: #58a4b0;
+  font-family: Arial, sans-serif;
 }
 
 .intro__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 3%;
 }
 
 .welcome {
-    font-size: 15rem;
-    color: #1b1b1e;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    text-align: center;
+  font-size: 15rem;
+  color: #1b1b1e;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  text-align: center;
 }
 
 .welcome-intro {
-    font-size: 2rem;
-    color: #1b1b1e;
-    font-family: Arial, sans-serif;
-    margin-top: 2rem;
-    line-height: 4rem;
-    text-align: center;
+  font-size: 2rem;
+  color: #1b1b1e;
+  font-family: Arial, sans-serif;
+  margin-top: 2rem;
+  line-height: 4rem;
+  text-align: center;
 }
 
 /* Welcome Mobile styles */
 @media (max-width: 767px) {
-    .welcome {
-        font-size: 10rem;
-        font-weight: bold;
-    }
+  .welcome {
+    font-size: 10rem;
+    font-weight: bold;
+  }
 }

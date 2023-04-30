@@ -8,9 +8,8 @@ describe('TwoColumnImageTextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TwoColumnImageTextComponent ]
-    })
-    .compileComponents();
+      declarations: [TwoColumnImageTextComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TwoColumnImageTextComponent);
     component = fixture.componentInstance;

@@ -10,9 +10,8 @@ describe('IntroContentComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [IntroContentComponent],
-      imports: [BrowserAnimationsModule]
-    })
-      .compileComponents();
+      imports: [BrowserAnimationsModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(IntroContentComponent);
     component = fixture.componentInstance;

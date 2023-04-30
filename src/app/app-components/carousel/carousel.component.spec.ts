@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed, discardPeriodicTasks, fakeAsync, tick } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 import { CarouselComponent } from './carousel.component';
 
 describe('CarouselComponent', () => {

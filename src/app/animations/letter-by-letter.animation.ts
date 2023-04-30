@@ -1,4 +1,11 @@
-import { trigger, style, transition, animate, query, stagger } from '@angular/animations';
+import {
+  trigger,
+  style,
+  transition,
+  animate,
+  query,
+  stagger,
+} from '@angular/animations';
 
 /*
 Quick walkthrough for future reference:
@@ -9,10 +16,12 @@ Quick walkthrough for future reference:
 - stagger() delays between each element found by 
 */
 export const letterAnimation = trigger('letterAnimation', [
-    transition(':enter', [
-        query('.letter', [
-            style({ opacity: 0, transform: 'translateY(-20px)' }),
-            stagger(100, [animate('500ms ease-out', style({ opacity: 1, transform: 'none' }))]),
-        ]),
+  transition(':enter', [
+    query('.letter', [
+      style({ opacity: 0, transform: 'translateY(-20px)' }),
+      stagger(100, [
+        animate('500ms ease-out', style({ opacity: 1, transform: 'none' })),
+      ]),
     ]),
+  ]),
 ]);
