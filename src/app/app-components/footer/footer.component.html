@@ -1,21 +1,21 @@
 <footer class="footer">
   <div class="footer-content">
-    <div class="footer-left">Austin Doyle TM</div>
+    <div class="footer-left">{{ footerMainText }}</div>
     <div class="footer-right">
-      Follow Me on Social!
+      {{ socialIntro }}
       <a
-        href="https://www.linkedin.com/in/your-linkedin-profile"
+        href="{{ linkedInURL }}"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fab fa-linkedin"></i>
+        <i class="{{ linkedInIconClass }}"></i>
       </a>
       <a
-        href="https://github.com/your-github-username"
+        href="{{ githubURL }}"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fab fa-github"></i>
+        <i class="{{ githubIconClass }}"></i>
       </a>
     </div>
   </div>

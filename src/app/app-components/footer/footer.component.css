@@ -1,7 +1,7 @@
 .footer {
-  background-color: #333;
+  background-color: #58a4b0;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,20 +15,22 @@
 }
 
 .footer-left {
+  color: #d8dbe2;
   margin-left: 1rem;
 }
 
 .footer-right {
+  color: #d8dbe2;
   display: flex;
   align-items: center;
 }
 
 .footer-right a {
-  color: white;
   margin-left: 1rem;
   text-decoration: none;
 }
 
 .footer-right i {
+  color: #d8dbe2;
   font-size: 1.5rem;
 }

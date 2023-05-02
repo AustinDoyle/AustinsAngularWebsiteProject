@@ -53,6 +53,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.stopTransition();
     this.destroyed$.complete();
   }
 }
