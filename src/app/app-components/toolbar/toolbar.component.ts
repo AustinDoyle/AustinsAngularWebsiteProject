@@ -10,8 +10,8 @@ import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
 export class ToolbarComponent {
   navItems = [
     { label: 'Home', url: '#' },
-    { label: 'About', url: '#' },
-    { label: 'Contact', url: '#' },
+    { label: 'Blog', url: '/blog' },
+    { label: 'Online Resume', url: '/resume' },
   ];
 
   logoName = 'Austin Doyle';
