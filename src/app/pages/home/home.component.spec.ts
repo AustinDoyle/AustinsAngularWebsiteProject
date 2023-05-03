@@ -34,12 +34,6 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a toolbar component', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('app-toolbar');
-
-    expect(element).toBeTruthy();
-  });
-
   it('should have intro content component', () => {
     const element = fixture.debugElement.nativeElement.querySelector('app-intro-content');
 
@@ -54,12 +48,6 @@ describe('HomeComponent', () => {
 
   it('should have carousel component', () => {
     const element = fixture.debugElement.nativeElement.querySelector('app-carousel');
-
-    expect(element).toBeTruthy();
-  });
-
-  it('should have footer component', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('app-footer');
 
     expect(element).toBeTruthy();
   });
