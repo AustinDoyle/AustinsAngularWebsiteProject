@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TestMatTabComponent } from './test-mat-tab/test-mat-tab.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { BlogComponent } from './pages/blog/blog.component';
     HomeComponent,
     BlogComponent,
     ResumeComponent,
+    TestMatTabComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
