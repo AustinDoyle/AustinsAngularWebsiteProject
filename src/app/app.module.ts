@@ -9,8 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselComponent } from './app-components/carousel/carousel.component';
 import { IntroContentComponent } from './app-components/intro-content/intro-content.component';
 import { ToolbarComponent } from './app-components/toolbar/toolbar.component';
-import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ResumeComponent } from './pages/resume/resume.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     TwoColumnImageTextComponent,
     HomeComponent,
+    BlogComponent,
+    ResumeComponent,
   ],
   imports: [
     AppRoutingModule,
