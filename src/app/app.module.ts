@@ -17,6 +17,8 @@ import { IndividualBlogComponent } from './pages/blog/individual-blog/individual
 import { MatTabsModule } from '@angular/material/tabs';
 import { TestMatTabComponent } from './app-components/test-mat-tab/test-mat-tab.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ResumeTemplateComponent } from './pages/resume/resume-template/resume-template.component';
+import { ResumeChildComponent } from './pages/resume/resume-child/resume-child.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,14 @@ import { HttpClientModule } from '@angular/common/http';
     CarouselComponent,
     FooterComponent,
     TwoColumnImageTextComponent,
+    TestMatTabComponent,
     HomeComponent,
     BlogComponent,
     ResumeComponent,
-    TestMatTabComponent,
     IndividualBlogComponent,
+    ResumeComponent,
+    ResumeTemplateComponent,
+    ResumeChildComponent
   ],
   imports: [
     AppRoutingModule,
