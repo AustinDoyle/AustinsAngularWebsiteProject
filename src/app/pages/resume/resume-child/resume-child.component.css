@@ -1,0 +1,29 @@
+.resume-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Adjust this value for space between items */
+  max-width: 100%;
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content within the year container */
+  flex: 1 1 25%;
+  /* Set the year container to occupy 1/3 of the available space */
+  /* flex: 1 1 33.333%;  */
+  text-align: center; /* Center the content within the year container */
+  margin-right: 20px; /* Adjust this value to set the space between the year and the content */
+}
+
+.content {
+  flex: 2 1 75%;
+  /* flex: 2 1 66.667%; */
+  /* This allows the content container to grow or shrink */
+  text-align: left;
+}
+
+.content h3 {
+  margin: 0 0 10px;
+  /* Adjust this value to set the space between the title and the description */
+}
