@@ -13,8 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { IndividualBlogComponent } from './pages/blog/individual-blog/individual-blog.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TestMatTabComponent } from './test-mat-tab/test-mat-tab.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,16 @@ import { TestMatTabComponent } from './test-mat-tab/test-mat-tab.component';
     HomeComponent,
     BlogComponent,
     ResumeComponent,
-    TestMatTabComponent
+    TestMatTabComponent,
+    IndividualBlogComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
