@@ -2,7 +2,7 @@ import {
   ComponentFixture,
   TestBed,
   fakeAsync,
-  tick
+  tick,
 } from '@angular/core/testing';
 import { CarouselComponent } from './carousel.component';
 
@@ -66,21 +66,21 @@ describe('CarouselComponent', () => {
     expect(component.inactiveDelay).toBe(5000);
   });
 
-  it('should stop automatic transition when prevImage is called', (done) => {
+  it('should stop automatic transition when prevImage is called', done => {
     const stopTransitionSpy = spyOn(component, 'stopTransition');
     component.prevImage();
     expect(stopTransitionSpy).toHaveBeenCalled();
     done();
   });
 
-  it('should stop automatic transition when nextImage is called', (done) => {
+  it('should stop automatic transition when nextImage is called', done => {
     const stopTransitionSpy = spyOn(component, 'stopTransition');
     component.nextImage();
     expect(stopTransitionSpy).toHaveBeenCalled();
     done();
   });
 
-  it('should restart automatic transition after inactive delay when nextImage is called', (done) => {
+  it('should restart automatic transition after inactive delay when nextImage is called', done => {
     const restartTransitionSpy = spyOn(component, 'restartTransition');
     component.nextImage();
     jasmine.clock().tick(component.inactiveDelay);
@@ -94,7 +94,7 @@ describe('CarouselComponent', () => {
     expect(stopTransitionSpy).toHaveBeenCalled();
   });
 
-  it('should restart automatic transition after inactive delay when prevImage is called', (done) => {
+  it('should restart automatic transition after inactive delay when prevImage is called', done => {
     const restartTransitionSpy = spyOn(component, 'restartTransition');
     component.prevImage();
     jasmine.clock().tick(component.inactiveDelay);

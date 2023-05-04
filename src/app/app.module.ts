@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     BlogComponent,
     ResumeComponent,
     TestMatTabComponent,
-    IndividualBlogComponent
+    IndividualBlogComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -38,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

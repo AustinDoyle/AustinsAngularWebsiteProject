@@ -5,7 +5,7 @@ import { BlogService } from './blog-service/blog.service';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent {
   blogs: Blog[] = [];
@@ -13,7 +13,7 @@ export class BlogComponent {
   constructor(private blogService: BlogService) {}
 
   ngOnInit(): void {
-    this.blogService.getBlogs().subscribe((blogs) => {
+    this.blogService.getBlogs().subscribe(blogs => {
       this.blogs = blogs;
     });
   }

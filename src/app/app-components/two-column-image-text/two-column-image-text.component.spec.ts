@@ -35,17 +35,17 @@ describe('TwoColumnImageTextComponent', () => {
     const imageUrl = 'https://example.com/image.jpg';
     component.imageUrl = imageUrl;
     fixture.detectChanges();
-  
+
     const compiled = fixture.nativeElement;
     const img = compiled.querySelector('img');
-  
+
     expect(img.getAttribute('src')).toBe(imageUrl);
   });
 
   it('should render projected content', () => {
     const hostFixture = TestBed.createComponent(TestHostComponent);
     hostFixture.detectChanges();
-  
+
     const compiled = hostFixture.nativeElement;
     const cols = compiled.querySelectorAll('.col-md-6');
     expect(cols[1].innerHTML).toContain('<p>Hello, world!</p>');

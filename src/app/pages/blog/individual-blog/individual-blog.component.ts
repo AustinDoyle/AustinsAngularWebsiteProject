@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-individual-blog',
   templateUrl: './individual-blog.component.html',
-  styleUrls: ['./individual-blog.component.css']
+  styleUrls: ['./individual-blog.component.css'],
 })
 export class IndividualBlogComponent {
   blog?: Blog;
@@ -18,17 +18,17 @@ export class IndividualBlogComponent {
     private route: ActivatedRoute,
     private router: Router,
     private http: HttpClient
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     // const id = Number(this.route.snapshot.paramMap.get('id'));
     // this.blog = this.blogService.getBlog(id);
 
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.blogService.getBlog(id).subscribe((blog) => {
+    this.blogService.getBlog(id).subscribe(blog => {
       if (blog) {
         this.blog = blog;
-        this.http.get<{ content: string }>(blog.contentFile).subscribe((data) => {
+        this.http.get<{ content: string }>(blog.contentFile).subscribe(data => {
           this.blog.content = data.content;
         });
       }
