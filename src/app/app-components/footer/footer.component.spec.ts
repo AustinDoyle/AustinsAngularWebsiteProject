@@ -31,25 +31,25 @@ describe('FooterComponent', () => {
     const elements =
       fixture.debugElement.nativeElement.querySelectorAll('.footer-right a i');
 
-      expect(elements[0].getAttribute('class')).toBe(component.linkedInIconClass);
+    expect(elements[0].getAttribute('class')).toBe(component.linkedInIconClass);
   });
 
   it('should render github as the second icon', () => {
     const elements =
       fixture.debugElement.nativeElement.querySelectorAll('.footer-right a i');
 
-      expect(elements[1].getAttribute('class')).toBe(component.githubIconClass);
+    expect(elements[1].getAttribute('class')).toBe(component.githubIconClass);
   });
 
   it('should have the correct LinkedIn Link', () => {
     const element =
       fixture.debugElement.nativeElement.querySelectorAll('.footer-right a');
-      expect(element[0].getAttribute('href')).toBe(component.linkedInURL);
+    expect(element[0].getAttribute('href')).toBe(component.linkedInURL);
   });
 
   it('should have the correct LinkedIn Link', () => {
     const element =
       fixture.debugElement.nativeElement.querySelectorAll('.footer-right a');
-      expect(element[1].getAttribute('href')).toBe(component.githubURL);
+    expect(element[1].getAttribute('href')).toBe(component.githubURL);
   });
 });

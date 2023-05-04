@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   // Left hand side text
-  footerMainText = 'Austin Doyle™'
+  footerMainText = 'Austin Doyle™';
 
   // Right hand side text "{socialIntro} {linkedInIcon} {githubIcon}"
-  socialIntro = 'Follow Me on Social!'
+  socialIntro = 'Follow Me on Social!';
 
-  linkedInURL = 'https://www.linkedin.com/in/doyleaustin/'
-  linkedInIconClass = 'fa-linkedin fab'
+  linkedInURL = 'https://www.linkedin.com/in/doyleaustin/';
+  linkedInIconClass = 'fa-linkedin fab';
 
-  githubURL = 'https://github.com/AustinDoyle'
-  githubIconClass = 'fa-github fab'
+  githubURL = 'https://github.com/AustinDoyle';
+  githubIconClass = 'fa-github fab';
 }

@@ -15,7 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { IndividualBlogComponent } from './pages/blog/individual-blog/individual-blog.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TestMatTabComponent } from './test-mat-tab/test-mat-tab.component';
+import { TestMatTabComponent } from './app-components/test-mat-tab/test-mat-tab.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     BlogComponent,
     ResumeComponent,
     TestMatTabComponent,
-    IndividualBlogComponent
+    IndividualBlogComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -38,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -35,19 +35,23 @@ describe('HomeComponent', () => {
   });
 
   it('should have intro content component', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('app-intro-content');
+    const element =
+      fixture.debugElement.nativeElement.querySelector('app-intro-content');
 
     expect(element).toBeTruthy();
   });
 
   it('should have two column image and text component', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('app-two-column-image-text');
+    const element = fixture.debugElement.nativeElement.querySelector(
+      'app-two-column-image-text'
+    );
 
     expect(element).toBeTruthy();
   });
 
   it('should have carousel component', () => {
-    const element = fixture.debugElement.nativeElement.querySelector('app-carousel');
+    const element =
+      fixture.debugElement.nativeElement.querySelector('app-carousel');
 
     expect(element).toBeTruthy();
   });
