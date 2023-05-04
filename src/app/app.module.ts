@@ -15,7 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { IndividualBlogComponent } from './pages/blog/individual-blog/individual-blog.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TestMatTabComponent } from './test-mat-tab/test-mat-tab.component';
+import { TestMatTabComponent } from './app-components/test-mat-tab/test-mat-tab.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
