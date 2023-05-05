@@ -12,7 +12,7 @@ export class ResumeTemplateComponent {
       endDate: '2019',
       title: 'Software Engineer',
       description: [
-        ' Developed E2E pipelines using Docker, Jenkins, Kubernetes, and Cypress, improving test efficiency',
+        'Developed E2E pipelines using Docker, Jenkins, Kubernetes, and Cypress, improving test efficiency',
         'Developed and maintained web applications for clients.',
         'Collaborated with cross-functional teams.',
         'Implemented responsive designs.',
