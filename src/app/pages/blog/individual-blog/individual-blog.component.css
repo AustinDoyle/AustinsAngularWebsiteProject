@@ -1,0 +1,45 @@
+.blog-content {
+    max-width: 1080px;
+    width: 80%;
+    margin: auto;
+}
+
+.blog-title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog-meta {
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.blog-image {
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.blog-summary {
+    text-align: center;
+    /* justifies the summary */
+    padding: 0 20px;
+    /* adds space on either side */
+}
+
+.blog-paragraph p {
+    text-align: justify;
+    font-size: 1.5rem;
+    /* justifies the blog content */
+    /* padding: 0 20px; */
+    /* adds space on either side */
+}
+
+.back-button {
+    display: block;
+    /* for centering the button */
+    margin: 20px auto;
+    /* centers the button vertically */
+}
