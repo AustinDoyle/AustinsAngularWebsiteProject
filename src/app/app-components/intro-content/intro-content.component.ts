@@ -9,5 +9,6 @@ import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
   animations: [letterAnimation, fadeInLefToRight, slideUp],
 })
 export class IntroContentComponent {
+  @Input() introHeader: string;
   @Input() introText: string;
 }
