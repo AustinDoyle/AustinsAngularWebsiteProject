@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { letterAnimation } from '../../animations/letter-by-letter.animation';
 import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
 
@@ -8,4 +8,7 @@ import { fadeInLefToRight, slideUp } from '../../animations/fade-in.animation';
   styleUrls: ['./intro-content.component.css'],
   animations: [letterAnimation, fadeInLefToRight, slideUp],
 })
-export class IntroContentComponent {}
+export class IntroContentComponent {
+  @Input() introHeader: string;
+  @Input() introText: string;
+}

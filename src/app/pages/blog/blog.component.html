@@ -1,6 +1,18 @@
-<div *ngFor="let blog of blogs">
+<app-intro-content introText="Blog"></app-intro-content>
+
+<div class="blog-container">
+    <div *ngFor="let blog of blogs" class="blog-post">
+        <img [src]="blog.imageUrl" alt="{{ blog.title }}" />
+        <h2>{{ blog.title }}</h2>
+        <p>{{ blog.summary }}</p>
+        <a [routerLink]="['/blog', blog.id]">Read More</a>
+    </div>
+</div>
+
+<!-- <div *ngFor="let blog of blogs">
+    <img [src]="blog.imageUrl" alt="{{ blog.title }}" />
   <h2>
     <a [routerLink]="['/blog', blog.id]">{{ blog.title }}</a>
   </h2>
   <p>{{ blog.summary }}</p>
-</div>
+</div> -->

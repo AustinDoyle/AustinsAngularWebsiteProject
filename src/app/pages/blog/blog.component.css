@@ -1,0 +1,18 @@
+/* Style for the main container */
+.blog-container {
+    padding: 0 10%;
+    text-align: center;
+}
+
+/* Style for the individual blog post container */
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+/* Style for the blog post image */
+.blog-post img {
+    width: 30%;
+    /* Adjust the size as needed */
+    display: block;
+    margin: 1rem auto;
+}

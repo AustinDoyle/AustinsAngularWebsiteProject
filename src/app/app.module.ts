@@ -35,7 +35,7 @@ import { ResumeChildComponent } from './pages/resume/resume-child/resume-child.c
     IndividualBlogComponent,
     ResumeComponent,
     ResumeTemplateComponent,
-    ResumeChildComponent
+    ResumeChildComponent,
   ],
   imports: [
     AppRoutingModule,
