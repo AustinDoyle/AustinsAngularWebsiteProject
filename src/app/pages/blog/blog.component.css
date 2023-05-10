@@ -1,18 +1,47 @@
 /* Style for the main container */
 .blog-container {
-    padding: 0 10%;
-    text-align: center;
+  padding: 0 5%;
+  text-align: center;
 }
 
 /* Style for the individual blog post container */
 .blog-post {
-    margin-bottom: 2rem;
+  padding-top: 40px;
+  margin-bottom: 2rem;
 }
 
 /* Style for the blog post image */
 .blog-post img {
-    width: 30%;
-    /* Adjust the size as needed */
-    display: block;
-    margin: 1rem auto;
+  width: 60%;
+  /* Adjust the size as needed */
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Style for the content wrapper - This reduces the width to be less than the Image. */
+.content-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Styles for the text within the Content Wrapper describing the post */
+.blogTitle {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blogAuthorAndDate {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.blogSummary {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #444;
+  margin-bottom: 20px;
 }
