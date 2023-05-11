@@ -19,6 +19,7 @@ import { TestMatTabComponent } from './app-components/test-mat-tab/test-mat-tab.
 import { HttpClientModule } from '@angular/common/http';
 import { ResumeTemplateComponent } from './pages/resume/resume-template/resume-template.component';
 import { ResumeChildComponent } from './pages/resume/resume-child/resume-child.component';
+import { TwoColumnTextComponent } from './app-components/two-column-text/two-column-text.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ResumeChildComponent } from './pages/resume/resume-child/resume-child.c
     ResumeComponent,
     ResumeTemplateComponent,
     ResumeChildComponent,
+    TwoColumnTextComponent,
   ],
   imports: [
     AppRoutingModule,

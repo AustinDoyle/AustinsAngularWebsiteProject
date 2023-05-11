@@ -1,0 +1,41 @@
+.background {
+    padding-top: 10px;
+    background-color: #d8dbe2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.sectionHeader {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.paragraphContent {
+    font-size: 1.5rem;
+}
+
+.column {
+    flex: 1 1 500px; /* grow, shrink, base-width */
+    max-height: 800px;
+    overflow: auto; /* Allow scrolling when the max height is reached */
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column {
+        flex-basis: 100%; /* Make it 100% width below 768px screen width */
+    }
+}
