@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { leftParagraphAbout, rightParagraphAbout } from 'src/app/pages/home/about-data';
+import { leftParagraphAbout, rightParagraphAbout } from 'src/app/pages/home/static-home-data/about-data';
 
 @Component({
   selector: 'app-two-column-text',
