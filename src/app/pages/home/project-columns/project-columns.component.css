@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.responsive-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    gap: 10px;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+    .responsive-grid {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .column {
+        flex: 0 0 100%;
+    }
+}
+
+/* CSS Placeholders */
+/*
+.icon {
+}
+
+.title {
+}
+
+.overview {
+} 
+
+.bulletItems {
+}
+*/

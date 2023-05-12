@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ResumeTemplateComponent } from './pages/resume/resume-template/resume-template.component';
 import { ResumeChildComponent } from './pages/resume/resume-child/resume-child.component';
 import { TwoColumnTextComponent } from './app-components/two-column-text/two-column-text.component';
+import { ProjectColumnsComponent } from './pages/home/project-columns/project-columns.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { TwoColumnTextComponent } from './app-components/two-column-text/two-col
     ResumeTemplateComponent,
     ResumeChildComponent,
     TwoColumnTextComponent,
+    ProjectColumnsComponent,
   ],
   imports: [
     AppRoutingModule,

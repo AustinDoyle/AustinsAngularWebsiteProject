@@ -21,9 +21,6 @@ export class IndividualBlogComponent {
   ) {}
 
   ngOnInit(): void {
-    // const id = Number(this.route.snapshot.paramMap.get('id'));
-    // this.blog = this.blogService.getBlog(id);
-
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.blogService.getBlog(id).subscribe(blog => {
       if (blog) {

@@ -1,0 +1,8 @@
+<div class="responsive-grid">
+    <div class="column" *ngFor="let column of columns">
+        <img src={{column.icon}} alt="My Icon">
+        <h2 class="title">{{ column.title }}</h2>
+        <p class="overview">{{ column.overview }}</p>
+        <li class="bulletItems" *ngFor="let bulletItem of column.bulletItems">{{ bulletItem }}</li>
+    </div>
+</div>
