@@ -1,0 +1,42 @@
+.box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    padding-bottom: 15px;
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease; 
+}
+
+.overlay h2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.overlay p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover .overlay {
+    background: rgba(0, 0, 0, 0.5); 
+}
