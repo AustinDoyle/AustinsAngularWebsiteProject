@@ -11,7 +11,6 @@ export class ToolbarComponent {
   navItems = [
     { label: 'Home', url: '#' },
     { label: 'Blog', url: '/blog' },
-    { label: 'Online Resume', url: '/resume' },
   ];
 
   logoName = 'Austin Doyle';
