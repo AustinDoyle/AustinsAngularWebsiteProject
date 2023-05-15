@@ -3,12 +3,11 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 20px;
-    padding-bottom: 15px;
 }
 
 .box img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -30,13 +29,31 @@
 }
 
 .overlay h2 {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
 .overlay p {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .box:hover .overlay {
     background: rgba(0, 0, 0, 0.5); 
+}
+
+/* 
+Media queries are being used to handle Cover across odd screen sizes.
+This should not end up being a huge problem and will improve user experience.
+762-889px can be handled with 400px in the single row.
+900-991px can be handled with 500px, which is an odd case, but should prove to be the best solution.
+*/
+@media (min-width: 762px) and (max-width: 889px) {
+    .box img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 991px) {
+    .box img {
+        height: 500px;
+    }
 }
