@@ -1,0 +1,38 @@
+[
+    {
+        "imageUrl": "assets/website-capture-images/ISDA-Financial-Capture-Edit.jpg",
+        "title": "ISDA Financial Life",
+        "overview": "HTML, JavaScript & CSS",
+        "link": "https://isdafinancial.com/"
+    },
+    {
+        "imageUrl": "assets/website-capture-images/COPOMIAO-Capture-Edit.jpg",
+        "title": "COPOMIAO",
+        "overview": "Modernized with WordPress and CSS",
+        "link": "https://copomiao.org/"
+    },
+    {
+        "imageUrl": "assets/website-capture-images/Order-ISDA-Capture.jpg",
+        "title": "Order ISDA",
+        "overview": "PHP & CSS",
+        "link": "https://orderisda.org/"
+    },
+    {
+        "imageUrl": "assets/website-capture-images/Cleveland-CIAO-Capture.jpg",
+        "title": "Cleveland CIAO",
+        "overview": "WordPress HTML & CSS",
+        "link": "https://ciaocle.com/"
+    },
+    {
+        "imageUrl": "assets/website-capture-images/iStock-1407356504.jpg",
+        "title": "",
+        "overview": "",
+        "link": ""
+    },
+    {
+        "imageUrl": "assets/website-capture-images/iStock-1407356504.jpg",
+        "title": "",
+        "overview": "",
+        "link": ""
+    }
+]

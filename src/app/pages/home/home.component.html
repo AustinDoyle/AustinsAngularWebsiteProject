@@ -4,8 +4,16 @@ principles and methodologies, and be capable of writing clean and
 maintainable code."></app-intro-content>
 
 <h2 class="sectionHeader">Project Work</h2>
-<app-project-columns></app-project-columns>
+<div class="projectsContainer">
+    <app-project-columns></app-project-columns>
+</div>
 
-<app-two-column-text></app-two-column-text>
 
-<app-carousel [images]="carouselImages" [interval]="3000"></app-carousel>
+<h2 class="sectionHeader">Web Design</h2>
+<div class="sitesContainer">
+    <div class="column-row no-gutters">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let box of boxes">
+            <app-image-box [box]="box"></app-image-box>
+          </div>
+    </div>
+</div>

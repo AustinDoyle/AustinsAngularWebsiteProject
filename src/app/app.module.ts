@@ -21,6 +21,7 @@ import { ResumeTemplateComponent } from './pages/resume/resume-template/resume-t
 import { ResumeChildComponent } from './pages/resume/resume-child/resume-child.component';
 import { TwoColumnTextComponent } from './app-components/two-column-text/two-column-text.component';
 import { ProjectColumnsComponent } from './pages/home/project-columns/project-columns.component';
+import { ImageBoxComponent } from './image-box/image-box.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ProjectColumnsComponent } from './pages/home/project-columns/project-co
     ResumeChildComponent,
     TwoColumnTextComponent,
     ProjectColumnsComponent,
+    ImageBoxComponent,
   ],
   imports: [
     AppRoutingModule,
