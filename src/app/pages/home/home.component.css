@@ -1,5 +1,35 @@
 .sectionHeader {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sitesContainer {
+  padding-bottom: 50px;
+}
+
+.homeCarouselContainer {
+  padding-bottom: 50px;
+}
+
+.column-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+@media (min-width: 992px) {
+  .box img {
+    height: 0;
+    padding-bottom: 100%; /* This makes the height equal to the width, creating a square */
+    object-fit: cover;
+  }
+}
